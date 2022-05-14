@@ -71,14 +71,6 @@ background-color : rgb(78, 8, 8);
 .meniu li:hover {
 background-color : rgb(90, 15, 15);
 }
-h3 {
-position : relative;
-left : 2em;
-color : antiquewhite;
-top : 1.5em;
-font-size : 30px;
-text-shadow : 2px 2px 5px rgb(199, 83, 7);
-}
 #despre > img {
 position : relative;
 top : 2em;
