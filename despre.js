@@ -4,8 +4,12 @@ window.onload = function () {
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.display = 'none';
     }
-    document.getElementById("welcome-text").innerHTML = "Bună " + localStorage.name + ", bine ai venit!";
-    document.getElementById("welcome-area").style.display = "block";
+    let p = document.getElementById("welcome-area");
+    let text = document.createElement("p");
+    text.textContent = "Bună " + localStorage.name + ", bine ai venit!";
+    text.setAttribute("id", "welcome-text");
+    p.style.display = "block";
+    p.appendChild(text);
   }
   document.getElementById("submit-name").onclick = function () {
     var name = document.getElementById("name-user").value;
@@ -15,10 +19,9 @@ window.onload = function () {
     else {
       localStorage.setItem("name", name);
       greet_user();
+      let p = document.getElementById("welcome-area");
+      const timeout=setTimeout(()=>{p.remove()}, 6000);
     }
-    document.getElementById("name-user").value = ""; //curatam campul
+    document.getElementById("name-user").value = ""; 
   }
-  //if(localStorage.name){
-  //    greet_user();
-  //}
 }

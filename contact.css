@@ -75,14 +75,13 @@ color : rgb(245, 239, 231);
 font-size : 30px;
 text-shadow : 2px 2px 5px rgb(199, 7, 7);
 }
-.dateContact {
+#dateContact {
 column-count : 3;
 column-gap : 1.5px;
 position : relative;
 top : 11em;
 font-size : 20px;
 color : white;
-left : 5em;
 }
 #telefoane {
 width: 60%;

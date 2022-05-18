@@ -73,6 +73,15 @@ background-color : rgb(78, 8, 8);
 .meniu li:hover {
 background-color : rgb(90, 15, 15);
 }
+#welcome-area {
+font-weight: bold; 
+font-size: 25px; 
+color: white; 
+display: none; 
+position: relative; 
+margin-top:70px; 
+left: 45em;
+}
 #despre > img {
 position : relative;
 top : 2em;
