@@ -6,9 +6,10 @@ box-sizing : border-box;
 }
 body {
 background-image : url("fundal.png");
+background-attachment: fixed;
 overflow-x : hidden;
 }
-b, strong {
+b {
 color : rgb(192, 6, 6);
 text-shadow : 0 0 3px rgb(136, 4, 4);
 }

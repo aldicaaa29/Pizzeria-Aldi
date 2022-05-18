@@ -85,7 +85,7 @@ ctx.clearRect(dir[0] * 10, dir[1] * 10, 10, 10);
 else if (!tn.length)
 {
 var show_score = document.getElementById("show");
-show_score.innerHTML = "You lose!<br /> <u>Your Score:</u> <b>"+score+"</b><br><br> Want to try again?<br><br><input type='button' value='Play Again' onclick='window.location.reload();' />";
+show_score.innerHTML = "<b>You lose!<br /> <u>Your Score:</u> "+score+"<br><br> Want to try again?<br><br><input type='button' value='Play Again' onclick='window.location.reload();' /></b>";
 document.getElementById("playArea").style.display = 'none';
 window.clearInterval(interval);
 }

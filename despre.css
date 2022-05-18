@@ -6,6 +6,7 @@ box-sizing : border-box;
 }
 body {
 background-image : url("fundal.png");
+background-attachment: fixed;
 overflow-x : hidden;
 }
 .name-field
@@ -14,9 +15,10 @@ position: relative;
 margin-top:80px;
 left: 76.5em;
 }
-b, strong {
+b {
 color : rgb(192, 6, 6);
 text-shadow : 0 0 3px rgb(136, 4, 4);
+font-weight: bold;
 }
 h1 {
 position : relative;

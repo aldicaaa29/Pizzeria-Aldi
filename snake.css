@@ -6,11 +6,13 @@ box-sizing : border-box;
 }
 body {
 background-image : url("fundal.png");
+background-attachment: fixed;
 overflow-x : hidden;
 }
-b, strong {
-color : rgb(192, 6, 6);
+b {
+color : rgb(255, 255, 255);
 text-shadow : 0 0 3px rgb(136, 4, 4);
+font-size: 40px;
 }
 nav li a {
 text-decoration : none;
