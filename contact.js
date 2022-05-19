@@ -15,6 +15,17 @@ function init() {
     });
 
     box.style.left = `${h3.getBoundingClientRect().left}px`;
+
+    const listData = document.querySelector('.list-data');
+    fetch('http://localhost:3000/data').then(response => response.json()).then(data => {
+        for (const item of data) {
+            const li = document.createElement('li');
+            li.textContent = item;
+            listData.append(li);
+        }
+
+        listData.append(document.createElement('br'));
+    });
 }
 
 window.onload=init;

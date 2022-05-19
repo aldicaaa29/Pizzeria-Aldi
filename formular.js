@@ -10,6 +10,20 @@ window.onload = function () {
       e.preventDefault();
       const areAllValid = checkInputs();
       if (areAllValid === true) {
+        console.log(e.target);
+        const formData = new FormData(e.target);
+        const body = {};
+
+        for (const key of formData.keys()) {
+          body[key] = formData.get(key);
+        }
+
+        fetch("http://localhost:3000/contact", {
+          method: "POST",
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+
         form.style.display = "none";
         h2.innerHTML = "Submiterea s-a realizat cu succes!";
       }
